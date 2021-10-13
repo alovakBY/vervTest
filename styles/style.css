@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * ::before,
+  * ::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+body {
+  font-family: "SFProText", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: gray; }
+
+.container {
+  width: 100%;
+  padding: 48px 0 39px;
+  margin: 0 auto;
+  background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%); }
+
+.header {
+  height: 471px;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+
+.btnClose {
+  width: 32px;
+  height: 32px;
+  margin-right: 13px;
+  border-radius: 50%;
+  position: relative;
+  background: url(../img/close.svg) center no-repeat;
+  background-color: rgba(255, 255, 255, 0.527344);
+  align-self: flex-end; }
+
+.header-title {
+  font-family: "SFProDisplay", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.37px;
+  align-self: center;
+  margin-bottom: 33px; }
+
+.header-group {
+  position: relative; }
+  .header-group .header-text {
+    font-family: "SFProText", sans-serif;
+    font-size: 12px;
+    line-height: 14px; }
+    .header-group .header-text p {
+      padding: 17px 0 17px 33px;
+      border-bottom: 1px solid;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0) 100%);
+      border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)) 50% 0%; }
+      .header-group .header-text p:first-child {
+        border-top: 1px solid; }
+  .header-group .header-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/iphoneXR/lineTop.svg) 0 0 no-repeat, url(../img/iphoneXR/lineBottom.svg) 0 0 no-repeat; }
+    .header-group .header-lines::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 3px solid white;
+      background-color: #ee304e;
+      position: absolute;
+      top: 63px;
+      right: 32px; }
+    .header-group .header-lines::after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 3px solid white;
+      background-color: #04cd00;
+      position: absolute;
+      bottom: 22px;
+      right: 32px; }
+  .header-group .header-girl {
+    position: absolute;
+    top: -42px;
+    left: 178px;
+    width: 152px;
+    height: 290px;
+    background: url(../img/iphoneXR/girlIphoneXR.png) center no-repeat;
+    background-size: cover; }
+  .header-group .header-points .point {
+    position: absolute;
+    width: 51px;
+    height: 27px;
+    background: url(../img/pointBG.svg) no-repeat center;
+    background-size: cover;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px; }
+    .header-group .header-points .point:first-child {
+      right: 13px;
+      top: 31px; }
+    .header-group .header-points .point:last-child {
+      right: 13px;
+      bottom: 41px; }
+    .header-group .header-points .point .point-text {
+      font-family: "SFProDisplay", sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center; }
+    .header-group .header-points .point .point-arrow {
+      margin-top: 2px; }
+
+/*# sourceMappingURL=style.css.map */
