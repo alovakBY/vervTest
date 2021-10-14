@@ -8,9 +8,10 @@ window.addEventListener('load', () => {
 	const points = document.querySelectorAll('.point') // Free and PRO
 	const blik = document.querySelector('.blik') // блик
 	
-	lines.style.width = `100%`
+	lines.style.animation = `animationLines 2s linear`
 
-	lines.addEventListener('transitionend', () => {
+	lines.addEventListener('animationend', () => {
+		lines.style.width = `100%`;
 		[...dots].forEach((e) => {
 			e.style.opacity = `1`
 			e.style.animation = `animationDots .4s linear`

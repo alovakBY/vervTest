@@ -83,8 +83,7 @@ body {
     left: 0;
     width: 0%;
     height: 100%;
-    background: url(../img/iphoneXR/lines.svg) 0 0 no-repeat;
-    transition: width 2s linear; }
+    background: url(../img/iphoneXR/lines.svg) 0 0 no-repeat; }
   .header-group .header-dots .dot {
     opacity: 0;
     transition: 0.1s linear;
@@ -178,5 +177,10 @@ body {
     transform: translateX(-400px) skewX(45deg); }
   to {
     transform: translateX(1000px) skewX(45deg); } }
+@keyframes animationLines {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

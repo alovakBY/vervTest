@@ -112,7 +112,6 @@ body {
     width: 0%;
     height: 100%;
     background: url(../img/iphoneXR/lines.svg) 0 0 no-repeat;
-    transition: width 2s linear;
   }
 
   .header-dots {
@@ -240,6 +239,15 @@ body {
   }
   to {
     transform: translateX(1000px) skewX(45deg);
+  }
+}
+
+@keyframes animationLines {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
 
