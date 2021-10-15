@@ -60,7 +60,7 @@ window.addEventListener('load', () => {
 
 	// Функция движения слайдера влево 
 	function runSliderLeft () {
-		sliderContainer.style.transition = ".4s ease-in-out"
+		sliderContainer.style.transition = ".5s ease-in-out"
 		if (slider.classList.contains("run")) return
 		slider.classList.add("run")
 		ind++
@@ -77,7 +77,7 @@ window.addEventListener('load', () => {
 
 	// Функция движения слайдера вправо
 	function runSliderRight () {
-		sliderContainer.style.transition = ".4s ease-in-out"
+		sliderContainer.style.transition = ".5s ease-in-out"
 		if (slider.classList.contains("run")) return
 		slider.classList.add("run")
 		ind--

@@ -22,6 +22,11 @@
   font-family: "SFProText";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/FontsFree-Net-SFProTextSemibold.ttf"); }
+  src: url("../fonts/FontsFree-Net-SFProText-Semibold.ttf"); }
+@font-face {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/FontsFree-Net-SFProText-Bold.ttf"); }
 
 /*# sourceMappingURL=fonts.css.map */

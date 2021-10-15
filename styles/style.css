@@ -11,11 +11,11 @@
 body {
   font-family: "SFProText", sans-serif;
   font-weight: 400;
-  color: #ffffff;
-  background-color: gray; }
+  color: #ffffff; }
 
 .container {
   width: 414px;
+  position: relative;
   padding: 0 0 39px;
   margin: 0 auto; }
 
@@ -24,7 +24,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 48px;
+  padding-top: 50px;
   background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%); }
 
 .btnClose {
@@ -180,8 +180,10 @@ body {
   to {
     transform: translateX(1000px) skewX(45deg); } }
 .slider {
-  position: relative;
-  top: -72.5px;
+  position: absolute;
+  left: 0;
+  top: 393px;
+  width: 100%;
   overflow: hidden; }
 
 .slider-container {
@@ -225,5 +227,118 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px; }
+
+.options {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  padding: 97px 20px 0; }
+
+.options-options {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 29px; }
+
+.option {
+  width: 118px;
+  border-radius: 5px;
+  text-align: center; }
+  .option + .option {
+    margin-left: 10px; }
+
+.option_1 {
+  height: 151px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f2f9;
+  padding-top: 5px; }
+
+.title {
+  font-family: "SFProText", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px; }
+
+.price {
+  font-family: "SFProText", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  padding-top: 12px; }
+
+.priceBottom {
+  font-family: "SFProText", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  padding-top: 6px; }
+
+.option_2 {
+  height: 176px;
+  overflow: hidden;
+  background: #f3f2f9; }
+  .option_2 .save {
+    background: #fcbf59;
+    color: black; }
+
+.save {
+  font-family: "SFProText", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0; }
+
+.option_3 {
+  position: relative;
+  height: 176px;
+  overflow: hidden;
+  background: #f3f2f9; }
+  .option_3 .save,
+  .option_3 .sale {
+    background: #fca759;
+    color: black; }
+  .option_3 .sale {
+    font-family: "SFProText", sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1px; }
+
+.optionActiv {
+  color: white;
+  background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%); }
+
+.options-btn {
+  width: 100%;
+  height: 50px;
+  font-family: "SFProText", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(225deg, #542285 0%, #222266 100%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px; }
+
+.options-text {
+  font-family: "SFProText", sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #000000;
+  opacity: 0.4;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
