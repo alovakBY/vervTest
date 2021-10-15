@@ -18,5 +18,10 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/FontsFree-Net-SFProText-Regular.ttf"); }
+@font-face {
+  font-family: "SFProText";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/FontsFree-Net-SFProTextSemibold.ttf"); }
 
 /*# sourceMappingURL=fonts.css.map */

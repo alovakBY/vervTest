@@ -15,16 +15,17 @@ body {
   background-color: gray; }
 
 .container {
-  width: 100%;
-  padding: 48px 0 39px;
-  margin: 0 auto;
-  background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%); }
+  width: 414px;
+  padding: 0 0 39px;
+  margin: 0 auto; }
 
 .header {
-  height: 471px;
+  height: 470px;
   position: relative;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-top: 48px;
+  background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%); }
 
 .btnClose {
   width: 32px;
@@ -83,7 +84,8 @@ body {
     left: 0;
     width: 0%;
     height: 100%;
-    background: url(../img/iphoneXR/lines.svg) 0 0 no-repeat; }
+    background: url(../img/iphoneXR/lines.svg) 0 0 no-repeat;
+    transition: 2s linear; }
   .header-group .header-dots .dot {
     opacity: 0;
     transition: 0.1s linear;
@@ -177,10 +179,51 @@ body {
     transform: translateX(-400px) skewX(45deg); }
   to {
     transform: translateX(1000px) skewX(45deg); } }
-@keyframes animationLines {
-  from {
-    width: 0%; }
-  to {
-    width: 100%; } }
+.slider {
+  position: relative;
+  top: -72.5px;
+  overflow: hidden; }
+
+.slider-container {
+  display: flex; }
+  .slider-container > div {
+    flex-shrink: 0; }
+  .slider-container > div + div {
+    margin-left: 5px; }
+
+.slide {
+  width: 374px;
+  height: 145px;
+  background: #f3f2f9;
+  border-radius: 10px;
+  color: black;
+  padding: 20px; }
+
+.slide-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.slide-top--title {
+  font-family: "SFProText", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px; }
+
+.slide-autor {
+  font-family: "SFProText", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.5; }
+
+.rating {
+  margin-bottom: 15px; }
+
+.slide-comment {
+  font-family: "SFProText", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px; }
 
 /*# sourceMappingURL=style.css.map */
