@@ -21,6 +21,7 @@ body {
   width: 414px;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header {
@@ -473,7 +474,150 @@ body {
 }
 
 // Iphone X
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
+@media only screen /* and (min-device-width: 375px) */ and (max-device-height: 812px) {
+  .container {
+    width: 375px;
+  }
+
+  .header {
+    height: 419px;
+  }
+
+  .header-title {
+    margin-bottom: 20px;
+  }
+
+  .header-group {
+    .header-text {
+      p {
+        padding: 15px 0 15px 21px;
+      }
+    }
+
+    .header-lines {
+      background: url(../img/iphoneX/lines.svg) 0 0 no-repeat;
+    }
+
+    //  padding: 15px 0 15px 21px;
+
+    .header-dots {
+      .dot {
+        &:first-child {
+          top: 53px;
+          right: 48px;
+        }
+        &:last-child {
+          top: 141px;
+          right: 48px;
+        }
+      }
+    }
+
+    .header-points {
+      .point {
+        &:first-child {
+          right: 28px;
+          top: 24px;
+        }
+        &:last-child {
+          right: 28px;
+          top: 112px;
+        }
+      }
+    }
+
+    .header-girl {
+      width: 135px;
+      height: 253px;
+      top: -35px;
+      left: 162px;
+      background: url(../img/iphoneX/girlIphoneX.png) center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .slider {
+    top: 346px;
+  }
+
+  .slide {
+    width: 335px;
+  }
+
+  .options {
+    padding: 93px 20px 39px;
+  }
+
+  .options-options {
+    margin-bottom: 20px;
+  }
+
+  .option {
+    width: 105px;
+  }
+
+  .option_1 {
+    height: 131px;
+  }
+
+  .title {
+    line-height: 24px;
+  }
+
+  .price {
+    padding-top: 8px;
+  }
+
+  .priceBottom {
+    padding-top: 6px;
+  }
+
+  .option_2 {
+    height: 156px;
+  }
+
+  .save {
+    padding: 5px 0;
+  }
+
+  .option_3 {
+    height: 156px;
+    .sale {
+      padding-bottom: 1px;
+    }
+  }
+
+  .options-btn {
+    margin-bottom: 20px;
+    a {
+      font-family: "SFProText", sans-serif;
+      font-size: 22px;
+      line-height: 28px;
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  .lightThemeOptionsText {
+    color: #000000;
+    opacity: 0.4;
+  }
+
+  .darkThemeOptionsText {
+    color: #7d7d80;
+  }
+
+  .options-text {
+    font-family: "SFProText", sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+  }
 }
 
 // Iphone 5,SE
