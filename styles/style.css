@@ -16,7 +16,6 @@ body {
 .container {
   width: 414px;
   position: relative;
-  padding: 0 0 39px;
   margin: 0 auto; }
 
 .header {
@@ -24,7 +23,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 48px;
   background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%); }
 
 .btnClose {
@@ -112,7 +111,7 @@ body {
     width: 51px;
     height: 24px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 10px;
     color: black;
     box-shadow: 0px 2px 4px rgba(90, 0, 124, 0.25);
     display: flex;
@@ -179,6 +178,14 @@ body {
     transform: translateX(-400px) skewX(45deg); }
   to {
     transform: translateX(1000px) skewX(45deg); } }
+.lightThemeSlider {
+  background: #f3f2f9;
+  color: #1a1a1a; }
+
+.darkThemeSlider {
+  background: linear-gradient(225deg, #262526 0%, #19181a 100%);
+  color: #ffffff; }
+
 .slider {
   position: absolute;
   left: 0;
@@ -196,9 +203,7 @@ body {
 .slide {
   width: 374px;
   height: 145px;
-  background: #f3f2f9;
   border-radius: 10px;
-  color: black;
   padding: 20px; }
 
 .slide-top {
@@ -212,7 +217,7 @@ body {
   font-size: 15px;
   line-height: 18px; }
 
-.slide-autor {
+.slide-top--autor {
   font-family: "SFProText", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -228,17 +233,34 @@ body {
   font-size: 15px;
   line-height: 18px; }
 
+.lightThemeOptions {
+  background-color: white; }
+
+.darkThemeOptions {
+  background-color: black; }
+
 .options {
   display: flex;
   flex-direction: column;
-  background-color: white;
   color: black;
-  padding: 97px 20px 0; }
+  padding: 97px 20px 39px; }
 
 .options-options {
   display: flex;
   align-items: flex-end;
   margin-bottom: 29px; }
+
+.lightThemeOption {
+  background: #f3f2f9;
+  color: #000000; }
+
+.darkThemeOption {
+  background: #373640;
+  color: #ffffff; }
+
+.activOption {
+  background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%);
+  color: white; }
 
 .option {
   width: 118px;
@@ -251,15 +273,19 @@ body {
   height: 151px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #f3f2f9;
-  padding-top: 5px; }
+  align-items: center; }
 
 .title {
   font-family: "SFProText", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px; }
+  line-height: 28px;
+  padding-top: 6px;
+  display: flex;
+  flex-direction: column; }
+  .title span {
+    font-size: 15px;
+    line-height: 17px; }
 
 .price {
   font-family: "SFProText", sans-serif;
@@ -277,8 +303,7 @@ body {
 
 .option_2 {
   height: 176px;
-  overflow: hidden;
-  background: #f3f2f9; }
+  overflow: hidden; }
   .option_2 .save {
     background: #fcbf59;
     color: black; }
@@ -295,8 +320,7 @@ body {
 .option_3 {
   position: relative;
   height: 176px;
-  overflow: hidden;
-  background: #f3f2f9; }
+  overflow: hidden; }
   .option_3 .save,
   .option_3 .sale {
     background: #fca759;
@@ -313,32 +337,37 @@ body {
     bottom: 0;
     padding-bottom: 1px; }
 
-.optionActiv {
-  color: white;
-  background: linear-gradient(225deg, #894ac9 0%, #4d46b1 100%); }
-
 .options-btn {
+  position: relative;
   width: 100%;
   height: 50px;
-  font-family: "SFProText", sans-serif;
-  font-size: 22px;
-  line-height: 28px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(225deg, #542285 0%, #222266 100%);
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px; }
+  .options-btn a {
+    font-family: "SFProText", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+
+.lightThemeOptionsText {
+  color: #000000;
+  opacity: 0.4; }
+
+.darkThemeOptionsText {
+  color: #7d7d80; }
 
 .options-text {
   font-family: "SFProText", sans-serif;
   font-weight: normal;
   font-size: 11px;
   line-height: 15px;
-  color: #000000;
-  opacity: 0.4;
   text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
