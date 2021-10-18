@@ -69,7 +69,6 @@ body {
       filter: blur(130px);
       transform: translateX(-400px) skewX(45deg); }
   .header-group .header-text {
-    font-family: "SFProText", sans-serif;
     font-size: 12px;
     line-height: 14px; }
     .header-group .header-text p {
@@ -149,7 +148,7 @@ body {
     left: 178px;
     width: 152px;
     height: 290px;
-    background: url(../img/iphoneXR/girlIphoneXR.png) center no-repeat;
+    background: url(../img/iphoneXR/girlIphoneXR@2x.png) center no-repeat;
     background-size: cover; }
 
 @keyframes animationDots {
@@ -214,14 +213,11 @@ body {
   margin-bottom: 10px; }
 
 .slide-top--title {
-  font-family: "SFProText", sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px; }
 
 .slide-top--autor {
-  font-family: "SFProText", sans-serif;
-  font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   opacity: 0.5; }
@@ -230,8 +226,6 @@ body {
   margin-bottom: 15px; }
 
 .slide-comment {
-  font-family: "SFProText", sans-serif;
-  font-weight: 400;
   font-size: 15px;
   line-height: 18px; }
 
@@ -278,7 +272,6 @@ body {
   align-items: center; }
 
 .title {
-  font-family: "SFProText", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -290,15 +283,11 @@ body {
     line-height: 17px; }
 
 .price {
-  font-family: "SFProText", sans-serif;
-  font-weight: normal;
   font-size: 13px;
   line-height: 16px;
   padding-top: 12px; }
 
 .priceBottom {
-  font-family: "SFProText", sans-serif;
-  font-weight: normal;
   font-size: 13px;
   line-height: 16px;
   padding-top: 6px; }
@@ -311,7 +300,6 @@ body {
     color: black; }
 
 .save {
-  font-family: "SFProText", sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
@@ -328,10 +316,10 @@ body {
     background: #fca759;
     color: black; }
   .option_3 .sale {
-    font-family: "SFProText", sans-serif;
     font-weight: 700;
     font-size: 9px;
     line-height: 15px;
+    letter-spacing: 0.4px;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -348,9 +336,9 @@ body {
   cursor: pointer;
   margin-bottom: 20px; }
   .options-btn a {
-    font-family: "SFProText", sans-serif;
     font-size: 22px;
     line-height: 28px;
+    letter-spacing: 0.5px;
     color: #ffffff;
     text-decoration: none;
     display: flex;
@@ -366,13 +354,11 @@ body {
   color: #7d7d80; }
 
 .options-text {
-  font-family: "SFProText", sans-serif;
-  font-weight: normal;
   font-size: 11px;
   line-height: 15px;
   text-align: center; }
 
-@media only screen and (max-device-height: 812px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) {
   .container {
     width: 375px; }
 
@@ -403,7 +389,7 @@ body {
     height: 253px;
     top: -35px;
     left: 162px;
-    background: url(../img/iphoneX/girlIphoneX.png) center no-repeat;
+    background: url(../img/iphoneX/girlIphoneX@3x.png) center no-repeat;
     background-size: cover; }
 
   .slider {
@@ -442,33 +428,113 @@ body {
   .option_3 {
     height: 156px; }
     .option_3 .sale {
-      padding-bottom: 1px; }
+      padding-bottom: 1px; } }
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) {
+  .container {
+    width: 320px; }
+
+  .header {
+    height: 261px;
+    padding-top: 29px; }
+
+  .btnClose {
+    margin-right: 10px; }
+
+  .header-title {
+    font-size: 24px;
+    line-height: 12px;
+    margin-bottom: 15px;
+    margin-left: 18px; }
+
+  .header-group .header-text p {
+    padding: 5px 0 5px 20px;
+    line-height: 15px; }
+  .header-group .header-lines {
+    background: url(../img/iphoneSE/lines.svg) 0 0 no-repeat; }
+  .header-group .header-dots .dot:first-child {
+    top: 32px;
+    right: 38px; }
+  .header-group .header-dots .dot:last-child {
+    top: 85px;
+    right: 38px; }
+  .header-group .header-points .point:first-child {
+    right: 20px;
+    top: -1px; }
+  .header-group .header-points .point:last-child {
+    right: 20px;
+    top: 52px; }
+  .header-group .header-girl {
+    width: 93px;
+    height: 157px;
+    top: -28px;
+    left: 160px;
+    background: url(../img/iphoneSE/girlIphoneSE@2x.png) center no-repeat;
+    background-size: cover; }
+
+  .slider {
+    top: 200px; }
+
+  .slide {
+    width: 280px;
+    height: 110px;
+    padding: 15px; }
+    .slide .slide-top {
+      margin-bottom: 7px; }
+    .slide .rating {
+      margin-bottom: 7px; }
+      .slide .rating img {
+        width: 15px;
+        height: 15px; }
+    .slide .slide-comment {
+      font-size: 13px;
+      line-height: 16px; }
+
+  .options {
+    padding: 62px 20px 18px; }
+
+  .options-options {
+    margin-bottom: 12px; }
+
+  .option {
+    width: 88px; }
+
+  .option_1 {
+    height: 112px; }
+
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 3px; }
+    .title span {
+      font-size: 13px;
+      line-height: 15px; }
+
+  .price {
+    font-size: 11px;
+    line-height: 13px;
+    padding-top: 5px; }
+
+  .priceBottom {
+    font-size: 10px;
+    letter-spacing: -0.27px;
+    line-height: 12px;
+    padding-top: 3px; }
+
+  .option_2 {
+    height: 133px; }
+
+  .save {
+    font-size: 11px;
+    letter-spacing: 0.66px;
+    padding: 3px 0; }
+
+  .option_3 {
+    height: 133px; }
+    .option_3 .sale {
+      padding-bottom: 1px;
+      font-size: 7px; }
 
   .options-btn {
-    margin-bottom: 20px; }
-    .options-btn a {
-      font-family: "SFProText", sans-serif;
-      font-size: 22px;
-      line-height: 28px;
-      color: #ffffff;
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%; }
-
-  .lightThemeOptionsText {
-    color: #000000;
-    opacity: 0.4; }
-
-  .darkThemeOptionsText {
-    color: #7d7d80; }
-
-  .options-text {
-    font-family: "SFProText", sans-serif;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: center; } }
+    margin-bottom: 17px; } }
 
 /*# sourceMappingURL=style.css.map */
