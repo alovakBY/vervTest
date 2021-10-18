@@ -299,6 +299,16 @@ body {
 
 .rating {
   margin-bottom: 15px;
+  display: flex;
+  .star {
+    width: 21px;
+    height: 21px;
+    background: url(../img/star.svg) no-repeat center;
+    background-size: cover;
+  }
+  .star + .star {
+    margin-left: 4px;
+  }
 }
 
 .slide-comment {
@@ -656,9 +666,12 @@ body {
     }
     .rating {
       margin-bottom: 7px;
-      img {
+      .star {
         width: 15px;
         height: 15px;
+      }
+      .star + .star {
+        margin-left: 4px;
       }
     }
     .slide-comment {
