@@ -270,6 +270,7 @@ body {
   & > div + div {
     margin-left: 5px;
   }
+  will-change: transform;
 }
 
 .slide {

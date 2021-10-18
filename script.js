@@ -117,7 +117,7 @@ function runSliderRight () {
 // Обработчики события для свайпа(запоминаем координаты при начале касания и при конце. Сравниваем и вызываем функию движения слайдера. Останавливаем автоматический свайп слайдера)
 slider.addEventListener('touchstart', (e) => {
 	startX = e.touches[0].clientX
-})
+}, {passive: true})
 slider.addEventListener('touchmove', (e) => {
 	finishX = e.touches[0].clientX
 	if (startX - finishX > 50) {
@@ -130,7 +130,7 @@ slider.addEventListener('touchmove', (e) => {
 		clearInterval(setInt)
 		runSliderRight()
 	}
-})
+}, {passive: true})
 
 
 	// Когда произойдет полная загрузка страницы

@@ -195,7 +195,8 @@ body {
   overflow: hidden; }
 
 .slider-container {
-  display: flex; }
+  display: flex;
+  will-change: transform; }
   .slider-container > div {
     flex-shrink: 0; }
   .slider-container > div + div {
